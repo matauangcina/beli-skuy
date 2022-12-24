@@ -1,0 +1,149 @@
+header {
+    border-bottom: 1px solid var(--black);
+}
+
+#content {
+    padding: 100px 300px;
+}
+
+#content h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+}
+
+#input-field {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.field {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 10px;
+}
+
+.input {
+    position: relative;
+    padding-top: 20px;
+}
+
+.error-msg {
+    opacity: 0;
+    transition: 200ms ease-in-out;
+}
+
+.error-msg.active {
+    margin-top: 5px;
+    opacity: 1;
+    transition: 200ms ease-in-out;
+    color: var(--red);
+}
+
+.input label {
+    position: absolute;
+    font-size: 20px;
+    cursor: auto;
+}
+
+.input.active label {
+    color: var(--highlight);
+}
+
+.input.error label {
+    color: var(--red);
+}
+
+.input input[type=text], input[type=email], input[type=password], input[type=date] {
+    margin-top: 5px;
+    outline: none;
+    width: 100%;
+    font-size: 20px;
+    padding-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid var(--black);
+}
+
+.input.active input {
+    border-bottom: 2px solid var(--highlight);
+    transition: 200ms ease-in-out;
+}
+
+.input.error input {
+    border-bottom: 1px solid var(--red);
+    transition: 200ms ease-in-out;
+}
+
+#gender {
+    padding-top: 20px;
+    font-size: 20px;
+    display: grid;
+    row-gap: 10px;
+}
+
+.radio label {
+    display: flex;
+    gap: 20px;
+    width: fit-content;
+}
+
+.input .bx {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    cursor: pointer;
+    background-color: var(--white);
+}
+
+.input.active .bx {
+    color: var(--highlight);
+}
+
+.input.error .bx {
+    color: var(--red);
+}
+
+#terms {
+    display: grid;
+    row-gap: 20px;
+    margin-bottom: 100px;
+}
+
+.checkbox {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    font-size: 18px;
+}
+
+.checkbox input[type=checkbox] {
+    transform: scale(1.5);
+}
+
+.checkbox a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.checkbox input[type=checkbox] {
+    height: 15px;
+}
+
+button#submit {
+    padding: 20px 0;
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--white);
+    background-color: var(--black);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js" integrity="sha512-nO7wgHUoWPYGCNriyGzcFwPSF+bPDOR+NvtOYy2wMcWkrnCNPKBcFEkU80XIN14UVja0Gdnff9EmydyLlOL7mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/input.js" defer></script>
+    <script src="../js/register.js" defer></script>
+    <script src="../js/nav-icon.js" defer></script>
+
+    <title>Register - BeliSkuy</title>
+</head>
+<body>
+    <header>
+        <div id="left">
+            <img src="../../assets/gallery/logo.svg" id="logo">
+            <a href="./cart.html"><img src="../../assets/gallery/shopping-cart.svg" class="nav-icon" id="cart"></a>
+            <a href="./chat.html"><img src="../../assets/gallery/chat-bubble.svg" class="nav-icon" id="chat"></a>
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="./gallery.html">Gallery</a>
+                </li>
+
+                <li class="active">
+                    <a href="./register.html">Register</a>
+                </li>
+
+                <li>
+                    <a href="./profile.html">Profile</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="content">
+        <h1>Register</h1>
+
+        <form action="" id="register">
+            <div id="input-field">
+                <div class="field">
+                    <div class="username input">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" required>
+                        <div class="error-msg"></div>
+                    </div>
+
+                    <div class="dob input">
+                        <label for="dob">Date of Birth</label>
+                        <input type="text" id="dob" onfocus="(this.type='date')" onblur="(this.type='text')" required>
+                        <div class="error-msg"></div>
+                    </div>
+
+                    <div id="gender">
+                        <p>Gender</p>
+
+                        <div class="radio">
+                            <label for="male">
+                                <input type="radio" value="Male" id="male" name="gender" required>
+                                <p>Male</p>
+                            </label>
+                        </div>
+
+                        <div class="radio">
+                            <label for="female">
+                                <input type="radio" value="Female" id="female" name="gender" required>
+                                <p>Female</p>
+                            </label>
+                        </div>
+
+                        <div class="error-msg"></div>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <div class="email input">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                        <div class="error-msg"></div>
+                    </div>
+
+                    <div class="pass input">
+                        <label for="pass">Password</label>
+                        <input type="password" id="pass" required>
+                        <div class="bx bxs-show"></div>
+                        <div class="error-msg"></div>
+                    </div>
+
+                    <div class="conf input">
+                        <label for="conf">Confirm Password</label>
+                        <input type="password" id="conf" required>
+                        <div class="bx bxs-show"></div>
+                        <div class="error-msg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="terms">
+                <div class="checkbox">
+                    <input type="checkbox" id="commercial">
+                    <label for="commercial">I want to receive personalized commercial communications from <b>BeliSkuy</b> via email</label>
+                </div>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="policy" required>
+                    <label for="policy">I have read and understand the <a href="">privacy and cookies policy</a></label>
+                </div>
+            </div>
+
+            <button type="submit" id="submit">Register</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>Copyright 2022 &copy; BeliSkuy</p>
+
+        <div id="social-media">
+            <a href="https://instagram.com"><img src="../../assets/gallery/instagram.svg"></a>
+            <a href="https://facebook.com"><img src="../../assets/gallery/facebook.svg"></a>
+            <a href="https://twitter.com"><img src="../../assets/gallery/twitter.svg"></a>
+            <a href="https://tiktok.com"><img src="../../assets/gallery/tiktok.svg"></a>
+        </div>
+    </footer>
+</body>
+</html>

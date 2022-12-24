@@ -12,6 +12,11 @@
     --white: #FFFFFF;
     --red: #FF0000;
     --shadow: rgba(255, 255, 255, 0.25);
+    --highlight: rgb(0, 160, 204);
+}
+
+::placeholder {
+    color: black;
 }
 
 body a {
@@ -58,6 +63,31 @@ nav ul li {
     padding: 5px 0;
 }
 
-nav ul li.active {
+nav ul li.active, nav ul li:hover {
     border-bottom: 3px solid var(--black);
+}
+
+footer {
+    padding: 20px 50px;
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    color: var(--white);
+    font-size: 15px;
+}
+
+#social-media {
+    display: flex;
+    gap: 30px;
+}
+
+#social-media img {
+    transition: 200ms ease-in-out;
+}
+
+#social-media img:hover {
+    transform: scale(1.1);
+    transition: 200ms ease-in-out;
 }
