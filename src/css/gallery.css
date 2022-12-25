@@ -1,8 +1,8 @@
 #top {
-    padding: 40px 50px;
+    padding: 2em 3em;
     background-color: var(--black);
     color: var(--white);
-    font-size: 25px;
+    font-size: 1.5625em;
     font-style: italic;
 }
 
@@ -16,15 +16,19 @@
 }
 
 #mid {
-    padding: 30px 400px;
+    padding: 2rem 0;
+}
+
+.container {
+    margin-inline: auto;
+    width: min(80%, 54.875rem);
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 2rem;
 }
 
 #carousel {
     position: relative;
-    z-index: 1;
     overflow: hidden;
     cursor: pointer;
 }
@@ -49,12 +53,12 @@
     bottom: 5%;
     transform: translateX(-50%);
     display: flex;
-    gap: 20px;
+    gap: 1.125rem;
 }
 
 .navigate {
-    height: 15px;
-    width: 15px;
+    height: 1rem;
+    width: 1rem;
     border-radius: 100%;
     border: 2px solid var(--beige);
 }
@@ -68,7 +72,7 @@
     display: grid;
     grid-template-columns: repeat(2, 49%);
     justify-content: space-between;
-    grid-gap: 15px;
+    grid-gap: 1rem;
 }
 
 .category {
@@ -85,7 +89,7 @@
 }
 
 .category p {
-    padding: 10px 0;
+    padding: 0.2em 0;
     position: absolute;
     bottom: 10%;
     left: 50%;
@@ -93,17 +97,17 @@
     width: 90%;
     text-align: center;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 1.875em;
     font-weight: 700;
     background-color: var(--beige);
     opacity: 0.8;
 }
 
 #latest-product {
-    margin-top: 30px;
+    margin-top: 1.875em;
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 1.5rem;
 }
 
 #text {
@@ -114,12 +118,12 @@
 }
 
 #latest-product  #text h1 {
-    font-size: 35px;
+    font-size: 2em;
     text-transform: uppercase;
 }
 
 #text a {
-    font-size: 18px;
+    font-size: 1.125em;
     text-decoration: underline;
 }
 
@@ -133,28 +137,22 @@
 }
 
 #container {
-    width: 200%;
+    width: fit-content;
     display: flex;
-    padding-bottom: 5px;
-    justify-content: space-between;
+    gap: 1.125em;
 }
 
+/* box shadow not working */
 .product {
     border-radius: 5px;
     background-color: var(--white);
+    border: 1px solid black;
     box-shadow: 0px 4px 4px var(--shadow);
-    transition: 200ms ease-in-out;
-    /* box-shadow not working */
-}
-
-.product:hover {
-    transform: scale(1.02);
-    transition: 200ms ease-in-out;
 }
 
 .product img {
-    height: 200px;
-    width: 200px;
+    height: 12em;
+    width: 12em;
 }
 
 .product p {
@@ -162,6 +160,18 @@
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 20px;
-    margin: 30px 0;
+    font-size: 1.125em;
+    margin: 1.125em 0;
+}
+
+@media screen and ( width <= 768px ) {
+    #content {
+        font-size: 12px;
+    }
+}
+
+@media screen and ( width <= 480px ) {
+    #content {
+        font-size: 10px;
+    }
 }

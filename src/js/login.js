@@ -1,34 +1,12 @@
-const submitForm = document.getElementById('register');
+const submitForm = document.getElementById('login');
 
 submitForm.addEventListener('submit', e => {
     e.preventDefault();
 
-    const name = document.getElementById('username');
-    const dob = document.getElementById('dob');
     const email = document.getElementById('email');
     const pass = document.getElementById('pass');
-    const conf = document.getElementById('conf');
 
     let isValid = 1;
-
-    if ( name.value.length < 5 || name.value.length > 30 ) {
-        isValid = 0;
-        name.closest('.input').classList.add('error');
-        name.closest('.input').querySelector('.error-msg').classList.add('active');
-        name.closest('.input').querySelector('.error-msg').textContent = 'Username must be at least 5 characters and at most 30 characters!';
-    }
-
-    if ( !checkDob(dob.value) ) {
-        isValid = 0;
-        dob.closest('.input').classList.add('error');
-        dob.closest('.input').querySelector('.error-msg').classList.add('active');
-        dob.closest('.input').querySelector('.error-msg').textContent = 'Must be at least 18 years old!';
-    } else if ( checkDob(dob.value) == -1 ) {
-        isValid = 0;
-        dob.closest('.input').classList.add('error');
-        dob.closest('.input').querySelector('.error-msg').classList.add('active');
-        dob.closest('.input').querySelector('.error-msg').textContent = 'Invalid date of birth!';
-    }
     
     if ( !checkEmail(email.value) ) {
         isValid = 0;
@@ -48,34 +26,10 @@ submitForm.addEventListener('submit', e => {
         pass.closest('.input').querySelector('.error-msg').classList.add('active');
         pass.closest('.input').querySelector('.error-msg').textContent = 'Password must be at least 10 characters!';
     }
-
-    if ( conf.value !== pass.value ) {
-        isValid = 0;
-        conf.closest('.input').classList.add('error');
-        conf.closest('.input').querySelector('.error-msg').classList.add('active');
-        conf.closest('.input').querySelector('.error-msg').textContent = 'Password did not match!';
-    }
     
     if ( isValid )
-        window.location.replace('./index.html');
+        window.location.replace('./gallery.html');
 })
-
-const checkDob = dob => {
-    const date = new Date();
-    const curr = date.setFullYear(date.getFullYear());
-
-    const year = date.getFullYear();
-    const birth = new Date(dob).getFullYear();
-
-    if ( new Date(dob) > curr ) {
-        return -1;
-    }
-    if ( year - birth < 18 ) {
-        return 0;
-    }
-
-    return 1
-}
 
 const checkEmail = email => {
     const asperand = email.indexOf('@');

@@ -12,6 +12,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js" integrity="sha512-nO7wgHUoWPYGCNriyGzcFwPSF+bPDOR+NvtOYy2wMcWkrnCNPKBcFEkU80XIN14UVja0Gdnff9EmydyLlOL7mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../js/carousel.js" defer></script>
+    <script src="../js/menu.js" defer></script>
     <script src="../js/nav-icon.js" defer></script>
 
     <title>Gallery - BeliSkuy</title>
@@ -26,20 +27,16 @@
 
         <nav>
             <ul>
-                <li class="active">
-                    <a href="./gallery.html">Gallery</a>
-                </li>
-
-                <li>
-                    <a href="./register.html">Register</a>
-                </li>
-
-                <li>
-                    <a href="./profile.html">Profile</a>
-                </li>
+                <a href="./gallery.html"><li>Gallery</li></a>
+                <a href="./register.html"><li class="active">Register</li></a>
+                <a href="./profile.html"><li>Profile</li></a>
             </ul>
         </nav>
+
+        <div class="bx bx-menu" id="menu"></div>
     </header>
+
+    <div id="overlay"></div>
 
     <div id="content">
         <div id="top">
@@ -48,96 +45,82 @@
         </div>
 
         <div id="mid">
-            <div id="carousel">
-                <div id="slides">
-                    <div class="slider active">
-                        <img src="../../assets/gallery/image-slider-1.svg">
+            <div class="container">
+                <div id="carousel">
+                    <div id="slides">
+                        <div class="slider active">
+                            <img src="../../assets/gallery/image-slider-1.svg">
+                        </div>
+                        <div class="slider">
+                            <img src="../../assets/gallery/image-slider-2.svg">
+                        </div>
+                        <div class="slider">
+                            <img src="../../assets/gallery/image-slider-3.svg">
+                        </div>
                     </div>
-    
-                    <div class="slider">
-                        <img src="../../assets/gallery/image-slider-2.svg">
-                    </div>
-    
-                    <div class="slider">
-                        <img src="../../assets/gallery/image-slider-3.svg">
+                    <div id="slide-nav">
+                        <div class="navigate active"></div>
+                        <div class="navigate"></div>
+                        <div class="navigate"></div>
                     </div>
                 </div>
-
-                <div id="slide-nav">
-                    <div class="navigate active"></div>
-                    <div class="navigate"></div>
-                    <div class="navigate"></div>
+                <div id="categories">
+                    <div class="category">
+                        <img src="../../assets/gallery/all.svg">
+                        <p>All</p>
+                    </div>
+                    <div class="category">
+                        <img src="../../assets/gallery/shoes.svg">
+                        <p>Shoes</p>
+                    </div>
+                    <div class="category">
+                        <img src="../../assets/gallery/pants.svg">
+                        <p>Pants</p>
+                    </div>
+                    <div class="category">
+                        <img src="../../assets/gallery/clothes.svg">
+                        <p>Clothes</p>
+                    </div>
                 </div>
-            </div>
-
-            <div id="categories">
-                <div class="category">
-                    <img src="../../assets/gallery/all.svg">
-                    <p>All</p>
-                </div>
-
-                <div class="category">
-                    <img src="../../assets/gallery/shoes.svg">
-                    <p>Shoes</p>
-                </div>
-
-                <div class="category">
-                    <img src="../../assets/gallery/pants.svg">
-                    <p>Pants</p>
-                </div>
-
-                <div class="category">
-                    <img src="../../assets/gallery/clothes.svg">
-                    <p>Clothes</p>
-                </div>
-            </div>
-
-            <div id="latest-product">
-                <div id="text">
-                    <h1>Latest Products</h1>
-                    <a href="">View More</a>
-                </div>
-
-                <div id="product-list">
-                    <div id="container">
-                        <div class="product">
-                            <img src="../../assets/gallery/gray-shorts.svg">
-                            <p>Shorts</p>
-                        </div>
-    
-                        <div class="product">
-                            <img src="../../assets/gallery/airmax.svg">
-                            <p>Running Shoes</p>
-                        </div>
-
-                        <div class="product">
-                            <img src="../../assets/gallery/peach-blouse.svg">
-                            <p>Peach Blouse</p>
-                        </div>
-
-                        <div class="product">
-                            <img src="../../assets/gallery/beige-hoodie.svg">
-                            <p>Beige Hoodie</p>
-                        </div>
-
-                        <div class="product">
-                            <img src="../../assets/gallery/gray-shorts.svg">
-                            <p>Shorts</p>
-                        </div>
-    
-                        <div class="product">
-                            <img src="../../assets/gallery/airmax.svg">
-                            <p>Running Shoes</p>
-                        </div>
-
-                        <div class="product">
-                            <img src="../../assets/gallery/peach-blouse.svg">
-                            <p>Peach Blouse</p>
-                        </div>
-
-                        <div class="product">
-                            <img src="../../assets/gallery/beige-hoodie.svg">
-                            <p>Beige Hoodie</p>
+                <div id="latest-product">
+                    <div id="text">
+                        <h1>Latest Products</h1>
+                        <a href="">View More</a>
+                    </div>
+                    <div id="product-list">
+                        <div id="container">
+                            <div class="product">
+                                <img src="../../assets/gallery/gray-shorts.svg">
+                                <p>Shorts</p>
+                            </div>
+                            <div class="product">
+                                <img src="../../assets/gallery/airmax.svg">
+                                <p>Running Shoes</p>
+                            </div>
+                            <div class="product">
+                                <img src="../../assets/gallery/peach-blouse.svg">
+                                <p>Peach Blouse</p>
+                            </div>
+                            <div class="product">
+                                <img src="../../assets/gallery/beige-hoodie.svg">
+                                <p>Beige Hoodie</p>
+                            </div>
+                            <div class="product">
+                                <img src="../../assets/gallery/gray-shorts.svg">
+                                <p>Shorts</p>
+                            </div>
+                            <div class="product">
+                                <img src="../../assets/gallery/airmax.svg">
+                                <p>Running Shoes</p>
+                            </div>
+                            <div class="product">
+                                <img src="../../assets/gallery/peach-blouse.svg">
+                                <p>Peach Blouse</p>
+                            </div>
+                            <div class="product">
+                                <img src="../../assets/gallery/beige-hoodie.svg">
+                                <p>Beige Hoodie</p>
+                            </div>
                         </div>
                     </div>
                 </div>
