@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+}
+
+#content{
+    width: 70%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#content > .left{
+    width: 30%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#content > .left h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+#content > .left p{
+    font-family: 'Montserrat', sans-serif;    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 30px;
+    margin-left: 20px;
+}
+
+#content > .right{
+    width: 65%;
+}
+
+#content > .right > .user-name{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    width: 12%;
+    justify-content: space-between;
+}
+
+#content > .right > .user-name img{
+    width: 1rem;
+}
+
+.biodata{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 30px 40px;
+}
+
+.biodata .up{
+    display: flex;
+    justify-content: space-between;
+}
+
+.biodata .up .left{
+    width: 40%;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.biodata .up .left img{
+    width: 100%;
+}
+
+.biodata .up .left .text{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    padding: 10px;
+    border: 1px solid rgb(212, 206, 206);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.biodata .up .right{
+    width: 55%;
+}
+
+.up .right .change{
+    margin: 20px 0px;
+}
+
+table{
+    width: 100%;
+    border-spacing: 0px 5px;
+}
+
+table tr td img{
+    width: 15px;
+}
+
+table tr td{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    width: 40%;
+}
+
+table tr .edit{
+    text-align: right;
+}
+
+.right .change h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 10px 0px;
+}
+
+.biodata .bot{
+    width: 40%;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    padding: 10px;
+    border: 1px solid rgb(212, 206, 206);
+    border-radius: 5px;
+    margin: 40px 0px 30px 0px;
+}
+
+
+

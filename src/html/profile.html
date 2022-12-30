@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/global.css">
+    <!-- <link rel="stylesheet" href="../css/index.css"> -->
+    <link rel="stylesheet" href="../css/profile.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js" integrity="sha512-nO7wgHUoWPYGCNriyGzcFwPSF+bPDOR+NvtOYy2wMcWkrnCNPKBcFEkU80XIN14UVja0Gdnff9EmydyLlOL7mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/menu.js" defer></script>
+    <script src="../js/nav-icon.js" defer></script>
+
+    <title>Profile - BeliSkuy</title>
+</head>
+<body>
+    <header>
+        <div id="left">
+            <img src="../../assets/gallery/logo.svg" id="logo">
+            <a href="./cart.html"><img src="../../assets/gallery/shopping-cart.svg" class="nav-icon" id="cart"></a>
+            <a href="./chat.html"><img src="../../assets/gallery/chat-bubble.svg" class="nav-icon" id="chat"></a>
+        </div>
+
+        <nav>
+            <ul>
+                <a href="./gallery.html"><li>Gallery</li></a>
+                <a href="./register.html"><li class="active">Register</li></a>
+                <a href="./profile.html"><li>Profile</li></a>
+            </ul>
+        </nav>
+        
+        <div class="bx bx-menu" id="menu"></div>
+    </header>
+
+    <div id="overlay"></div>
+
+    <div id="content">
+        <div class="left">
+            <h3>Profile</h3>
+            <div class="text">
+                <p>Biodata</p>
+                <p>Address</p>
+                <p>Wishlist</p>
+                <p>Settings</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="user-name">
+                <img src="../../assets/profile/profile-logo.png" alt="">
+                <h3>John</h3>
+            </div>
+            <div class="biodata">
+                <div class="up">
+                    <div class="left">
+                        <img src="../../assets/profile/profile-picture.png" alt="">
+                        <div class="text">
+                            <p>Choose Profile</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="change">
+                            <h3>Change Biodata</h3>
+                            <table>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>John Doe</td>
+                                    <td class="edit"><img src="../../assets/profile/edit-logo.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td>Date of Birth</td>
+                                    <td>2000-01-01</td>
+                                    <td class="edit"><img src="../../assets/profile/edit-logo.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td>Gender</td>
+                                    <td>Male</td>
+                                    <td class="edit"><img src="../../assets/profile/edit-logo.png" alt=""></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="change">
+                            <h3>Change Contact</h3>
+                            <table>
+                                <tr>
+                                    <td>Email</td>
+                                    <td>Johndoe@mail.com</td>
+                                    <td class="edit"><img src="../../assets/profile/edit-logo.png" alt=""></td>
+                                </tr>
+                                <tr>
+                                    <td>Phone Number</td>
+                                    <td>xxxx-xxxx-xxxx</td>
+                                    <td class="edit"><img src="../../assets/profile/edit-logo.png" alt=""></td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="bot">
+                    <p>Change Password</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright 2022 &copy; BeliSkuy</p>
+
+        <div id="social-media">
+            <a href="https://instagram.com"><img src="../../assets/gallery/instagram.svg"></a>
+            <a href="https://facebook.com"><img src="../../assets/gallery/facebook.svg"></a>
+            <a href="https://twitter.com"><img src="../../assets/gallery/twitter.svg"></a>
+            <a href="https://tiktok.com"><img src="../../assets/gallery/tiktok.svg"></a>
+        </div>
+    </footer>
+</body>
+</html>
