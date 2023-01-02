@@ -1,0 +1,221 @@
+#content{
+    width: 70%;
+    margin: 60px auto;
+}
+
+#content > h1{
+    margin: 30px 0px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.container .product{
+    width: 65%;
+}
+
+.container .product .item{
+    display: flex;
+    width: 100%;
+    margin: 15px 0px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.product .item .img{
+    width: 30%;
+}
+
+.product .item .img img{
+    width: 100%;
+    height: 100%;
+}
+
+.product .item .detail{
+    width: 70%;
+    padding: 20px 30px;
+}
+
+.product .item .detail .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.detail .title img{
+    width: 5%;
+}
+
+.detail .product-code{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 5px 0px;
+}
+
+.detail .size{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.detail .rp{
+    margin: 20px 0px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.detail .quantity{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+.detail .quantity img{
+    width: 20%;
+}
+
+.detail .subtotal{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .payment{
+    width: 30%;
+}
+
+.payment .summary{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin: 15px 0px;
+    padding: 25px 30px;
+    border-radius: 10px;
+}
+
+.container .payment > h3{
+    margin-bottom: 20px;
+}
+
+.payment .detail-price{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+.payment .detail-price h3{
+    margin: 10px 0px;
+}
+
+.payment .discount{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 15px 10px;
+    border-radius: 5px;
+}
+
+.payment .discount:hover{
+    cursor: pointer;
+    background-color: rgb(173, 172, 172);
+}
+
+.payment .discount .icon-name{
+    display: flex;
+    align-items: center;
+    width: 85%;
+    justify-content: space-between;
+}
+
+.payment .discount .icon-name img{
+    width: 15%;
+}
+
+.payment .discount .arrow{
+    width: 5%;
+    text-align: right;
+}
+
+.payment .discount .arrow img{
+    width: 100%;    
+}
+
+.payment .proceed{
+    width: 100%;
+    background-color: black;
+    padding: 18px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.payment .proceed h3{
+    font-size: 17px;
+}
+
+.payment .proceed:hover{
+    cursor: pointer;
+    background-color: rgb(173, 172, 172);
+}
+
+@media screen and (max-width:950px){
+    #content{
+        width: 85%;
+    }
+
+    h3,p, h4{
+        font-size: 12px;
+    }
+
+    h4{
+        font-size: 10px;
+    }
+    .payment .proceed h3 {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .container{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .container .product, .container .payment{
+        width: 90%;
+    }
+
+    .payment .discount {
+        width: 60%;
+    }
+
+    .payment .discount .icon-name img{
+        width: 20px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .container .product .item{
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0px;
+    }
+
+    .product .item .img {
+        width: 50%;
+    }
+
+    .product .item .detail {
+        width: 95%;
+    }
+
+    .detail .title img {
+        width: 10%;
+    }
+}

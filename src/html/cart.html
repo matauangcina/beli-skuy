@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/global.css">
+    <!-- <link rel="stylesheet" href="../css/index.css"> -->
+    <link rel="stylesheet" href="../css/cart.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js" integrity="sha512-nO7wgHUoWPYGCNriyGzcFwPSF+bPDOR+NvtOYy2wMcWkrnCNPKBcFEkU80XIN14UVja0Gdnff9EmydyLlOL7mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/menu.js" defer></script>
+    <script src="../js/nav-icon.js" defer></script>
+
+    <title>Cart - BeliSkuy</title>
+</head>
+<body>
+    <header>
+        <div id="left">
+            <img src="../../assets/gallery/logo.svg" id="logo">
+            <a href="./cart.html"><img src="../../assets/gallery/shopping-cart.svg" class="nav-icon" id="cart"></a>
+            <a href="./chat.html"><img src="../../assets/gallery/chat-bubble.svg" class="nav-icon" id="chat"></a>
+        </div>
+
+        <nav>
+            <ul>
+                <a href="./gallery.html"><li>Gallery</li></a>
+                <a href="./register.html"><li class="active">Register</li></a>
+                <a href="./profile.html"><li>Profile</li></a>
+            </ul>
+        </nav>
+        
+        <div class="bx bx-menu" id="menu"></div>
+    </header>
+
+    <div id="overlay"></div>
+
+    <div id="content">
+        <h1>SHOPING CART</h1>
+        <div class="container">
+            <div class="product">
+                <div class="item">
+                    <div class="img">
+                        <img src="../../assets/cart/basic-black-hoodie.png" alt="">
+                    </div>
+                    <div class="detail">
+                        <div class="title">
+                            <h3>BASIC BLACK HOODIE</h3>
+                            <img src="../../assets/cart/trash.png" alt="">
+                        </div>
+                        <p class="product-code">
+                            Product Code: xxxxxxx
+                        </p>
+                        <p class="size">
+                            Size: M
+                        </p>
+                        <p class="rp">
+                            Rpxxx.xxx
+                        </p>
+                        <div class="quantity">
+                            <img src="../../assets/cart/minus.png" alt="">
+                            <p>1</p>
+                            <img src="../../assets/cart/plus.png" alt="">
+                        </div>
+                        <div class="subtotal">
+                            <h4>Subtotal</h4>
+                            <h4>Rpxxx.xxx</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="../../assets/cart/nike-air-force.png" alt="">
+                    </div>
+                    <div class="detail">
+                        <div class="title">
+                            <h3>NIKE AIR FORCE 1</h3>
+                            <img src="../../assets/cart/trash.png" alt="">
+                        </div>
+                        <p class="product-code">
+                            Product Code: xxxxxxx
+                        </p>
+                        <p class="size">
+                            Size: 42
+                        </p>
+                        <p class="rp">
+                            Rpxxx.xxx
+                        </p>
+                        <div class="quantity">
+                            <img src="../../assets/cart/minus.png" alt="">
+                            <p>1</p>
+                            <img src="../../assets/cart/plus.png" alt="">
+                        </div>
+                        <div class="subtotal">
+                            <h4>Subtotal</h4>
+                            <h4>Rpxxx.xxx</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="../../assets/cart/skinny-black-jeans.png" alt="">
+                    </div>
+                    <div class="detail">
+                        <div class="title">
+                            <h3>SKINNY BLACK JEANS</h3>
+                            <img src="../../assets/cart/trash.png" alt="">
+                        </div>
+                        <p class="product-code">
+                            Product Code: xxxxxxx
+                        </p>
+                        <p class="size">
+                            Size: 28
+                        </p>
+                        <p class="rp">
+                            Rpxxx.xxx
+                        </p>
+                        <div class="quantity">
+                            <img src="../../assets/cart/minus.png" alt="">
+                            <p>1</p>
+                            <img src="../../assets/cart/plus.png" alt="">
+                        </div>
+                        <div class="subtotal">
+                            <h4>Subtotal</h4>
+                            <h4>Rpxxx.xxx</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="../../assets/cart/converse-ct-high.png" alt="">
+                    </div>
+                    <div class="detail">
+                        <div class="title">
+                            <h3>CONVERSE CT HIGH</h3>
+                            <img src="../../assets/cart/trash.png" alt="">
+                        </div>
+                        <p class="product-code">
+                            Product Code: xxxxxxx
+                        </p>
+                        <p class="size">
+                            Size: 42
+                        </p>
+                        <p class="rp">
+                            Rpxxx.xxx
+                        </p>
+                        <div class="quantity">
+                            <img src="../../assets/cart/minus.png" alt="">
+                            <p>1</p>
+                            <img src="../../assets/cart/plus.png" alt="">
+                        </div>
+                        <div class="subtotal">
+                            <h4>Subtotal</h4>
+                            <h4>Rpxxx.xxx</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img">
+                        <img src="../../assets/cart/black-polo-shirt.png" alt="">
+                    </div>
+                    <div class="detail">
+                        <div class="title">
+                            <h3>BLACK POLO SHIRT</h3>
+                            <img src="../../assets/cart/trash.png" alt="">
+                        </div>
+                        <p class="product-code">
+                            Product Code: xxxxxxx
+                        </p>
+                        <p class="size">
+                            Size: M
+                        </p>
+                        <p class="rp">
+                            Rpxxx.xxx
+                        </p>
+                        <div class="quantity">
+                            <img src="../../assets/cart/minus.png" alt="">
+                            <p>1</p>
+                            <img src="../../assets/cart/plus.png" alt="">
+                        </div>
+                        <div class="subtotal">
+                            <h4>Subtotal</h4>
+                            <h4>Rpxxx.xxx</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="payment">
+                <div class="summary">
+                    <h3>SUMMARY</h3>
+                    <div class="detail-price">
+                        <p>Subtotal</p>
+                        <p>Rp299.000</p>
+                    </div>
+                    <div class="detail-price">
+                        <p>Tax</p>
+                        <p>Rp29.900</p>
+                    </div>
+                    <div class="detail-price">
+                        <h3>Total</h3>
+                        <h3>Rp328.900</h3>
+                    </div>
+                    <div class="discount">
+                        <div class="icon-name">
+                            <img src="../../assets/cart/discount.png" alt="">
+                            <h4>Add Discount</h4>
+                        </div>
+                        <div class="arrow">
+                            <img src="../../assets/cart/arrow.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="proceed">
+                    <h3>PROCEED PAYMENT</h3>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright 2022 &copy; BeliSkuy</p>
+
+        <div id="social-media">
+            <a href="https://instagram.com"><img src="../../assets/gallery/instagram.svg"></a>
+            <a href="https://facebook.com"><img src="../../assets/gallery/facebook.svg"></a>
+            <a href="https://twitter.com"><img src="../../assets/gallery/twitter.svg"></a>
+            <a href="https://tiktok.com"><img src="../../assets/gallery/tiktok.svg"></a>
+        </div>
+    </footer>
+</body>
+</html>
