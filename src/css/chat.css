@@ -21,6 +21,13 @@
     justify-content: space-between;
     align-items: center;
     margin: 10px 0px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.inbox .text:hover, .inbox .text.active {
+    background-color: var(--gray);
 }
 
 .inbox .text .notif{
